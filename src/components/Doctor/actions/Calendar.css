@@ -1,0 +1,54 @@
+.calendar-view {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .day-view .appointment,
+  .week-view .appointment,
+  .month-view .appointment {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .day-view .appointment:hover,
+  .week-view .appointment:hover,
+  .month-view .appointment:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .week-view {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .week-view .week-day {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .week-view .week-day-title {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .week-view .appointment {
+    margin-bottom: 5px;
+  }
+  
+  .month-view {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .month-view .appointment {
+    flex: 1 0 21%;
+    box-sizing: border-box;
+    margin: 5px;
+  }
+  
+  
